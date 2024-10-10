@@ -1,5 +1,5 @@
-usuario=[""]*3
-senha=[""]*3
+usuario=[""]*5
+senha=[""]*5
 tam=len(usuario)
 def criação_conta():
     for z in range(tam):
