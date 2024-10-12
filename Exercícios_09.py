@@ -9,24 +9,33 @@
 #efetuado com sucesso.
 import Biblioteca
 import Biblioteca
-from Biblioteca import criação_conta,registradas,login
-
+from Biblioteca import criação_conta,registradas,login,linha
+x=0
 o=0
 while o!=2:
-    print("Menu inicial...")
+    linha()
+    print("Cadastro: ")
+    linha()
     criação_conta()
+    linha()
     r = int(input("Se deseja ver o registro das contas criadas digite 1: \n"
               "se deseja logar digite 2: "))
+    linha()
     if r == 1:
         registradas()
+
         p=int(input("Se deseja logar digite 1: \n"
                 "se deseja encerrar digite 2: "))
+        linha()
         if p==1:
             r=2
         else:
             o=2
     if r==2:
         login()
+
+
     o=int(input("Se deseja refazer os cadastro digite 1: \n"
             "se deseja encerrar digite 2: "))
+    linha()
 print("Finalizado...")
