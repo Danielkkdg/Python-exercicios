@@ -33,8 +33,6 @@ while o!=2:
             o=2
     if r==2:
         login()
-
-
     o=int(input("Se deseja refazer os cadastro digite 1: \n"
             "se deseja encerrar digite 2: "))
     linha()
